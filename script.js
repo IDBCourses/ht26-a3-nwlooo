@@ -189,10 +189,7 @@ function bitesgrowBigger(event) {
     if (pointerInsideBite){
     getBigger = Math.min(getBigger + 0.3, 300); // Math.min() compares the new value with 200 and keeps whichever is smaller
     bite1.setSize(getBigger);
-    bite1.setPosition(0.45, 0.3);
-
     bite2.setSize(getBigger);
-    bite2.setPosition(0.45, 0.5);
 }
 }
 
