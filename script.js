@@ -63,10 +63,10 @@ let lastX = 0;
 let lastY = 0;
 let lastTime = 0;
 let melodySpeed;
+let pointerInsideBite;
 let bitesMoving = true;
 let bite1X = 0.75;
 let bite2X = 0.8;
-let pointerInsideBite = false;
 let getBigger = 190;
 let speeds = [];
 
@@ -82,9 +82,9 @@ function update() {
     bite2X += (bite2TargetX - bite2X) * 0.1;
     bite1.setPosition(bite1X, 0.3);
     bite2.setPosition(bite1X, 0.5);
-  } else {
-    bite1X;
-    bite2X;
+  } else if (!melodyLoop) {
+    bite1X = 0.75;
+    bite2X = 0.8;
   }
   setTimeout(update, 100); // call update() again in 100 milliseconds
 }
@@ -93,18 +93,12 @@ function update() {
 // Use the state to make sound and move shapes. This is called every 100ms.
  function use() {
   setTimeout(use, 100); // call use() again in 100 milliseconds
-}
+ }
 
 // ---------- Controls (Event Handlers) ----------
 // Runs every time the pointer goes down: a click, a tap or a pen touch.
 function startSound(event) {
   Tone.start(); // browsers only allow sound after the player has pressed something
-}
-
-function pointerEnter(event) {
- }
-
-function pointerLeave(event) {
 }
 
 function playMelody(event){
@@ -121,11 +115,16 @@ function pointerDown(event) {
   melodyLoop = setInterval(playMelody, melodySpeed); // plays one note every 200 miliseconds
  }
  bitesMoving = true;
+ isDragging = true;
+ console.log("Pointer down at", event.clientX, event.clientY);
 }
 
 function pointerUp(event) {
   clearInterval(melodyLoop); // stops the loop
   melodyLoop = null;
+
+ isDragging = false;
+ console.log("Pointer up at", event.clientX, event.clientY);
 
 }
 
@@ -182,21 +181,17 @@ function pointerMove(event) {
   } else {
     melodySpeed = 80;
   }
+  x = event.clientX;
+  y = event.clientY;
 }
 
 function bitesgrowBigger(event) {
-  pointerInsideBite = true;
-    if (pointerInsideBite){
+    if (!pointerInsideBite) {
     getBigger = Math.min(getBigger + 0.3, 300); // Math.min() compares the new value with 200 and keeps whichever is smaller
     bite1.setSize(getBigger);
     bite2.setSize(getBigger);
+    }
 }
-}
-
-function stopGrowing(event) {
-   pointerInsideBite = false;
-}
-
 // ---------- Setup ----------
 // Setup is run once, at the start of the program. It sets everything up for us!
 function setup() {
@@ -265,10 +260,10 @@ function setup() {
   bite2.setColour(380, 30, 100); // white colour
   bite2.setPosition(0.8, 0.5);
 
-
   // Put your event listener code here
-  donut.element.addEventListener("pointerenter", pointerEnter);
-  donut.element.addEventListener("pointerleave", pointerLeave);
+  donut.element.addEventListener("pointerleave", ()=> {
+    pinkglaze.setColour(314, 40, 90); // pink colour
+  });
   pinkglaze.element.addEventListener("pointerdown", pointerDown); // plays the melody in a loop
   pinkglaze.element.addEventListener("pointerdown", playMelody); // plays the melody
   pinkglaze.element.addEventListener("pointerup", pointerUp); // stops the loop
@@ -277,9 +272,9 @@ function setup() {
   bite1.element.addEventListener("pointermove", bitesgrowBigger);
   bite2.element.addEventListener("pointermove", bitesgrowBigger);
 
-  bite1.element.addEventListener("pointerleave", stopGrowing);
-  bite2.element.addEventListener("pointerleave", stopGrowing);
-
+  hole.element.addEventListener("pointerdown", () => {
+    pinkglaze.setColour(380, 40, 20); // chocolate donut
+  });
 
 }
 
