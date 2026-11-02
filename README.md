@@ -4,7 +4,7 @@
 
 **Name:** Nawaal Khan - at1575
 
-Enter the donut, press down on it and keep holding. A quiet melody will start playing. Move the pointer slowly around the donut at first, and then gradually increase its speed. As you move the pointer faster, you will hear the tempo of the melody and the volume increase as well.
+The instrument is a donut that plays a melody. Enter the donut, press down on it and keep holding. A quiet melody will start playing. Move the pointer slowly around the donut at first, and then gradually increase its speed. As you move the pointer faster, you will hear the tempo of the melody and the volume increase as well.
 
 
 ## How to play
