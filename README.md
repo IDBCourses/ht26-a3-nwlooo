@@ -4,7 +4,8 @@
 
 **Name:** Nawaal Khan - at1575
 
-<!-- One or two sentences: what kind of instrument is it, and what is it like to play? -->
+Enter the donut, press down on it and keep holding. A quiet melody will start playing. Move the pointer slowly around the donut at first, and then gradually increase its speed. As you move the pointer faster, you will hear the tempo of the melody and the volume increase as well.
+
 
 ## How to play
 
@@ -12,24 +13,11 @@
 
 | When you...      | The sound...                                |  The shapes..                                                                      |
 | ---------------- |-------------------------------------------- | ---------------------------------------------------------------------------------- |
-|pointer down and  | starts playing the melody (tune) on repeat  | two bite circles slide in from the right so it looks like someone is taking a bite |
-|hold on the glaze |                                             |                                                                                    |
-|(brown circle)    |                                             |                                                                                    |
-|----------------- |---------------------------------------------|------------------------------------------------------------------------------------|
-|move the pointer slowly and|         (moving slowly)            | hovering over the glaze (brown circle) increase the bites size                     |
-|then faster with one finger|     volume is fairly quiet         |                                                                                    |
-|while holding it down with |     melody tempo is slower         | hovering over the hole (middle white circle) decreases the bites size              |
-|another finger on the same |                                    |                                                                                    |
-|                           |         (moving faster)            |                                                                                    |
-|                           |       volume gets louder           |                                                                                    |
-|                           |      melody tempo gets faster      |                                                                                    |
-|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
-| click on any sprinkle     |                -                   | change the colour of the donut to that specific colour                             |
-|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
-| pointer up anywhere       |       stops the melody             | bites stay visible where they stopped moving                                       |
-|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
-| pointer leave             |                -                   | donuts returns to its original colour if it was changed                            |
-|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
+| hold the pointer down on the glaze (brown circle)| starts playing the melody (tune) on repeat| two white circles slide in from the right so it looks like someone is taking a bite|
+|move the pointer slowly and then faster with one finger while holding it down with another finger on the donut| moving slowly -> volume is fairly quiet and the melody tempo is slower while, moving faster -> volume gets louder and melody temp gets faster| hovering over the glaze increases the bites size, while hovering over the hole decreases the bites size|
+|click on any sprinkle| - | changes colour of the donut to that specific colour|
+|release the pointer anywhere| stops the melody| bites stay visible where they stopped moving|
+|move the pointer away from the donut| - | donut returns to its original colour if it was changed|
 
 <!-- Anything else a player needs to know: how to get started, a good thing to try first. -->
 
