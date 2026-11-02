@@ -2,7 +2,7 @@
 
 **Play it here:**  https://idbcourses.github.io/ht26-a3-nwlooo/
 
-**Name:** Nawaal Khan
+**Name:** Nawaal Khan - at1575
 
 <!-- One or two sentences: what kind of instrument is it, and what is it like to play? -->
 
@@ -10,14 +10,36 @@
 
 <!-- Fill in the table with a row for everything the player can do with the pointer: clicking, moving slowly or fast, moving in circles, holding still... Say what happens to the sound and to the shapes. If you added keys, give them rows too. -->
 
-| When you...  | The sound...                         | The shapes... |
-| ------------ | ------------------------------------ | ------------- |
-| Click or tap | Plays a C4 (the example: replace it) | Nothing yet   |
-|              |                                      |               |
+| When you...      | The sound...                                |  The shapes..                                                                      |
+| ---------------- |-------------------------------------------- | ---------------------------------------------------------------------------------- |
+|pointer down and  | starts playing the melody (tune) on repeat  | two bite circles slide in from the right so it looks like someone is taking a bite |
+|hold on the glaze |                                             |                                                                                    |
+|(brown circle)    |                                             |                                                                                    |
+|----------------- |---------------------------------------------|------------------------------------------------------------------------------------|
+|move the pointer slowly and|         (moving slowly)            | hovering over the glaze (brown circle) increase the bites size                     |
+|then faster with one finger|     volume is fairly quiet         |                                                                                    |
+|while holding it down with |     melody tempo is slower         | hovering over the hole (middle white circle) decreases the bites size              |
+|another finger on the same |                                    |                                                                                    |
+|                           |         (moving faster)            |                                                                                    |
+|                           |       volume gets louder           |                                                                                    |
+|                           |      melody tempo gets faster      |                                                                                    |
+|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
+| click on any sprinkle     |                -                   | change the colour of the donut to that specific colour                             |
+|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
+| pointer up anywhere       |       stops the melody             | bites stay visible where they stopped moving                                       |
+|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
+| pointer leave             |                -                   | donuts returns to its original colour if it was changed                            |
+|---------------------------|------------------------------------|------------------------------------------------------------------------------------|
 
 <!-- Anything else a player needs to know: how to get started, a good thing to try first. -->
 
----
+The computer volume should be a liitle higher to hear the melody playing at the begining, as the volume is set to -20, which is quite quiet and difficult to hear.
+Pointer movements should be fast enough to hear the melody at its max tempo.
+donut -> big beige circle (the dough)
+glaze -> slightly smaller brown circle on top
+hole  -> small white circle in the middle
+sprinkles -> small colourful circles
+bites -> two white circles, when overlap the edge of the donut, looks like a bite
 
 ## About this assignment
 
